@@ -1,47 +1,21 @@
 let conAbi =
     [
         {
-            "inputs": [],
-            "stateMutability": "nonpayable",
-            "type": "constructor"
-        },
-        {
-            "inputs": [],
-            "name": "AllNetworkComputing",
-            "outputs": [
+            "inputs": [
                 {
                     "internalType": "uint256",
-                    "name": "",
+                    "name": "USDTamount",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "Daynumber",
                     "type": "uint256"
                 }
             ],
-            "stateMutability": "view",
-            "type": "function"
-        },
-        {
-            "inputs": [],
-            "name": "DJT",
-            "outputs": [
-                {
-                    "internalType": "contract IERC20",
-                    "name": "",
-                    "type": "address"
-                }
-            ],
-            "stateMutability": "view",
-            "type": "function"
-        },
-        {
-            "inputs": [],
-            "name": "Price",
-            "outputs": [
-                {
-                    "internalType": "uint256",
-                    "name": "",
-                    "type": "uint256"
-                }
-            ],
-            "stateMutability": "view",
+            "name": "investment",
+            "outputs": [],
+            "stateMutability": "payable",
             "type": "function"
         },
         {
@@ -53,6 +27,13 @@ let conAbi =
                 }
             ],
             "name": "Reduceproduction",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "startTime",
             "outputs": [],
             "stateMutability": "nonpayable",
             "type": "function"
@@ -76,6 +57,37 @@ let conAbi =
             "type": "function"
         },
         {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "newOwner",
+                    "type": "address"
+                }
+            ],
+            "name": "transferOwnership",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "stateMutability": "nonpayable",
+            "type": "constructor"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "rate",
+                    "type": "uint256"
+                }
+            ],
+            "name": "updatePrice",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
             "inputs": [],
             "name": "Withdrawal",
             "outputs": [],
@@ -88,6 +100,10 @@ let conAbi =
             "outputs": [],
             "stateMutability": "payable",
             "type": "function"
+        },
+        {
+            "stateMutability": "payable",
+            "type": "receive"
         },
         {
             "inputs": [
@@ -271,6 +287,32 @@ let conAbi =
             "type": "function"
         },
         {
+            "inputs": [],
+            "name": "AllNetworkComputing",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "DJT",
+            "outputs": [
+                {
+                    "internalType": "contract IERC20",
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
             "inputs": [
                 {
                     "internalType": "address",
@@ -290,43 +332,6 @@ let conAbi =
             "type": "function"
         },
         {
-            "inputs": [
-                {
-                    "internalType": "uint256",
-                    "name": "m",
-                    "type": "uint256"
-                }
-            ],
-            "name": "getweak",
-            "outputs": [
-                {
-                    "internalType": "uint256",
-                    "name": "",
-                    "type": "uint256"
-                }
-            ],
-            "stateMutability": "pure",
-            "type": "function"
-        },
-        {
-            "inputs": [
-                {
-                    "internalType": "uint256",
-                    "name": "USDTamount",
-                    "type": "uint256"
-                },
-                {
-                    "internalType": "uint256",
-                    "name": "Daynumber",
-                    "type": "uint256"
-                }
-            ],
-            "name": "investment",
-            "outputs": [],
-            "stateMutability": "payable",
-            "type": "function"
-        },
-        {
             "inputs": [],
             "name": "newtime",
             "outputs": [
@@ -342,6 +347,19 @@ let conAbi =
         {
             "inputs": [],
             "name": "oneDay",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "Price",
             "outputs": [
                 {
                     "internalType": "uint256",
@@ -372,32 +390,6 @@ let conAbi =
             "type": "function"
         },
         {
-            "inputs": [
-                {
-                    "internalType": "address",
-                    "name": "newOwner",
-                    "type": "address"
-                }
-            ],
-            "name": "transferOwnership",
-            "outputs": [],
-            "stateMutability": "nonpayable",
-            "type": "function"
-        },
-        {
-            "inputs": [
-                {
-                    "internalType": "uint256",
-                    "name": "rate",
-                    "type": "uint256"
-                }
-            ],
-            "name": "updatePrice",
-            "outputs": [],
-            "stateMutability": "nonpayable",
-            "type": "function"
-        },
-        {
             "inputs": [],
             "name": "usdt",
             "outputs": [
@@ -409,9 +401,5 @@ let conAbi =
             ],
             "stateMutability": "view",
             "type": "function"
-        },
-        {
-            "stateMutability": "payable",
-            "type": "receive"
         }
     ]
