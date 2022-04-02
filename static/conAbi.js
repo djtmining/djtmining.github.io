@@ -191,6 +191,11 @@ let conAbi =
                     "internalType": "uint256",
                     "name": "Out",
                     "type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "STime",
+                    "type": "uint256"
                 }
             ],
             "stateMutability": "view",
@@ -254,6 +259,11 @@ let conAbi =
                 {
                     "internalType": "uint256",
                     "name": "Out",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "STime",
                     "type": "uint256"
                 }
             ],
