@@ -202,90 +202,8 @@ let conAbi =
             "type": "function"
         },
         {
-            "inputs": [
-                {
-                    "internalType": "uint256",
-                    "name": "",
-                    "type": "uint256"
-                },
-                {
-                    "internalType": "uint256",
-                    "name": "",
-                    "type": "uint256"
-                }
-            ],
-            "name": "_playerMap111",
-            "outputs": [
-                {
-                    "internalType": "uint256",
-                    "name": "id",
-                    "type": "uint256"
-                },
-                {
-                    "internalType": "address",
-                    "name": "addr",
-                    "type": "address"
-                },
-                {
-                    "internalType": "uint256",
-                    "name": "InvestmentQuantity",
-                    "type": "uint256"
-                },
-                {
-                    "internalType": "uint256",
-                    "name": "USDTQuantity",
-                    "type": "uint256"
-                },
-                {
-                    "internalType": "uint256",
-                    "name": "DJTQuantity",
-                    "type": "uint256"
-                },
-                {
-                    "internalType": "uint256",
-                    "name": "EndTime",
-                    "type": "uint256"
-                },
-                {
-                    "internalType": "uint256",
-                    "name": "profit",
-                    "type": "uint256"
-                },
-                {
-                    "internalType": "uint256",
-                    "name": "ExpirationTime",
-                    "type": "uint256"
-                },
-                {
-                    "internalType": "uint256",
-                    "name": "Out",
-                    "type": "uint256"
-                },
-                {
-                    "internalType": "uint256",
-                    "name": "STime",
-                    "type": "uint256"
-                }
-            ],
-            "stateMutability": "view",
-            "type": "function"
-        },
-        {
             "inputs": [],
             "name": "_startTime",
-            "outputs": [
-                {
-                    "internalType": "uint256",
-                    "name": "",
-                    "type": "uint256"
-                }
-            ],
-            "stateMutability": "view",
-            "type": "function"
-        },
-        {
-            "inputs": [],
-            "name": "_staticRate",
             "outputs": [
                 {
                     "internalType": "uint256",
@@ -343,19 +261,6 @@ let conAbi =
         },
         {
             "inputs": [],
-            "name": "newtime",
-            "outputs": [
-                {
-                    "internalType": "uint256",
-                    "name": "",
-                    "type": "uint256"
-                }
-            ],
-            "stateMutability": "view",
-            "type": "function"
-        },
-        {
-            "inputs": [],
             "name": "oneDay",
             "outputs": [
                 {
@@ -370,25 +275,6 @@ let conAbi =
         {
             "inputs": [],
             "name": "Price",
-            "outputs": [
-                {
-                    "internalType": "uint256",
-                    "name": "",
-                    "type": "uint256"
-                }
-            ],
-            "stateMutability": "view",
-            "type": "function"
-        },
-        {
-            "inputs": [
-                {
-                    "internalType": "uint256",
-                    "name": "",
-                    "type": "uint256"
-                }
-            ],
-            "name": "size",
             "outputs": [
                 {
                     "internalType": "uint256",
